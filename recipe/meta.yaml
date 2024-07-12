@@ -1,4 +1,4 @@
-{% set version = "1.1.1" %}
+{% set version = "2.0.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/genieBPC_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/genieBPC/genieBPC_{{ version }}.tar.gz
-  sha256: 961638737ce370b9e65d55baf5ce14aaf9a84c4da8084ddf9d782810628918e9
+  sha256: 4f9e47a8c110fb0175ad5795a5dcbc266bf576d2508451c437b65d8989504e0a
 
 build:
   merge_build_host: true  # [win]
